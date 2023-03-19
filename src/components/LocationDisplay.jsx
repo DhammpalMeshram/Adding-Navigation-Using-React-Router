@@ -6,8 +6,7 @@ const LocationDisplay =()=>{
     const location = useLocation();
 
     return(
-        <h1>{location.pathname}</h1>
-
+        <h4 data-testid="location-display">{location.pathname}</h4>
     )
 }
 
