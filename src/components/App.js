@@ -6,8 +6,18 @@ import NavBar from "./NavBar";
 
 import Home from "./Home";
 import About from "./About";
-import LocationDisplay from "./LocationDisplay";
+// import LocationDisplay from "./LocationDisplay";
 import NoMatch from "./NoMatch";
+import { useLocation } from "react-router-dom";
+
+export const LocationDisplay =()=>{
+    const location = useLocation();
+
+    return(
+        <h4 data-testid="location-display">{location.pathname}</h4>
+    )
+}
+
 
 class App extends Component {
 
@@ -38,3 +48,4 @@ class App extends Component {
 
 
 export default App;
+
